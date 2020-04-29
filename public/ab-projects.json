@@ -1,0 +1,194 @@
+[
+  {
+    "title": "Cruscotto Polizze",
+    "company": "Dedagroup - MC Engineering",
+    "type": "Web App",
+    "year": "2019",
+    "client": "Intesa San Paolo",
+    "role": "Sviluppatore Front End",
+    "description": "L'applicazione visualizza alcune polizze stipulate dai clenti della banca e permette alcune operazioni.",
+    "skills": [
+      { "title": "Angular7", "img": "", "ext": "F" },
+      { "title": "Custom Framework (Angular7)", "img": "", "ext": "F" },
+      { "title": "TypeScript", "img": "", "ext": "L" },
+      { "title": "JavaScript ES6", "img": "", "ext": "L" },
+      { "title": "HTML5", "img": "", "ext": "L" },
+      { "title": "CSS", "img": "", "ext": "L" },
+      { "title": "SASS", "img": "", "ext": "L" },
+      { "title": "REST", "img": "", "ext": "F" },
+      { "title": "Jenkins", "img": "", "ext": "T" },
+      { "title": "Git", "img": "", "ext": "T" },
+      { "title": "VS Code", "img": "", "ext": "I" }
+    ]
+  },
+  {
+    "title": "AFM",
+    "company": "Dedagroup - MC Engineering",
+    "type": "Web App",
+    "year": "2020",
+    "client": "CSE",
+    "role": "Sviluppatore Web",
+    "description": "L'applicazione permette di eseguire alcune query su movimenti transazionari caricati precedentemente da un processo BATCH.",
+    "skills": [
+      { "title": "Custom Framework (GWT 2.8)", "img": "", "ext": "F" },
+      { "title": "Custom Framework (JAVA EE)", "img": "", "ext": "F" },
+      { "title": "MyBatis 3", "img": "", "ext": "F" },
+      { "title": "DB2", "img": "", "ext": "D" },
+      { "title": "JAVA 8", "img": "", "ext": "L" },
+      { "title": "REST", "img": "", "ext": "T" },
+      { "title": "JIRA", "img": "", "ext": "T" },
+      { "title": "Git", "img": "", "ext": "T" },
+      { "title": "Postman", "img": "", "ext": "T" },
+      { "title": "SQL Developer", "img": "", "ext": "T" },
+      { "title": "Eclipse Neon", "img": "", "ext": "T" }
+    ]
+  },
+  {
+    "title": "Talco Stocks",
+    "company": "Mobilesoft",
+    "year": "2017",
+    "type": "Mobile iPad App",
+    "client": "Talco",
+    "role": "Sviluppatore Mobile",
+    "description": "L'applicazione serve a visualizzare lo stato degli ordini fatti dagli negozi Talco.",
+    "skills": [
+      { "title": "Appcelerator Titanium", "img": "", "ext": "F" },
+      { "title": "JavaScript ES5", "img": "", "ext": "L" },
+      { "title": "REST", "img": "", "ext": "P" },
+      { "title": "Git", "img": "", "ext": "T" },
+      { "title": "Zeplin", "img": "", "ext": "T" },
+      { "title": "Appcelerator Studio", "img": "", "ext": "I" }
+    ]
+  },
+  {
+    "title": "Igea Banca Survery",
+    "company": "Mobilesoft",
+    "year": "2017",
+    "type": "Mobile App",
+    "client": "Igea Banca",
+    "role": "Sviluppatore Mobile",
+    "description": "L'applicazione serviva ha raccogliere un sondaggio duranate un evento per Igea Banca.",
+    "skills": [
+      { "title": "Appcelerator Titanium", "img": "", "ext": "F" },
+      { "title": "JavaScript ES5", "img": "", "ext": "T" },
+      { "title": "REST", "img": "", "ext": "P" },
+      { "title": "Git", "img": "", "ext": "T" },
+      { "title": "Zeplin", "img": "", "ext": "T" },
+      { "title": "Appcelerator Studio", "img": "", "ext": "I" }
+    ]
+  },
+  {
+    "title": "GAPA",
+    "company": "Mobilesoft",
+    "year": "2016",
+    "type": "Mobile iPad App",
+    "client": "Banca BNL",
+    "role": "Sviluppatore Mobile",
+    "description": "L'applicazione serve a visualizzare lo stato degli ordini fatti dagli negozi Talco.",
+    "skills": [
+      { "title": "Framework Ionic 2", "img": "", "ext": "F" },
+      { "title": "TypeScript", "img": "", "ext": "L" },
+      { "title": "JavaScript", "img": "", "ext": "L" },
+      { "title": "HTML5", "img": "", "ext": "L" },
+      { "title": "CSS", "img": "", "ext": "L" },
+      { "title": "REST", "img": "", "ext": "P" },
+      { "title": "Git", "img": "", "ext": "T" },
+      { "title": "Zeplin", "img": "", "ext": "T" },
+      { "title": "VS Code", "img": "", "ext": "I" }
+    ]
+  },
+  {
+    "title": "SMILE - Piattaforma Digitale",
+    "company": "Mobilesoft",
+    "type": "Web App",
+    "year": "2017-2019",
+    "client": "Igea Banca",
+    "role": "Sviluppatore Web",
+    "description": "L'applicazione è un gestionale di prodotti bancari, comprende la configurazione dei prodotti e la gestione delle pratiche legate ai vari prodotti. Un'altra funzione importante è la gestione della rete di vendità.",
+    "skills": [
+      { "title": "Angular2-7", "img": "", "ext": "F" },
+      { "title": "Spring Framework 5", "img": "", "ext": "F" },
+      { "title": "Hibernate 5", "img": "", "ext": "F" },
+      { "title": "Bootstrap 3.7 / 4", "img": "", "ext": "F" },
+      { "title": "TypeScript", "img": "", "ext": "L" },
+      { "title": "JavaScript ES6", "img": "", "ext": "L" },
+      { "title": "RxJS", "img": "", "ext": "F" },
+      { "title": "HTML5", "img": "", "ext": "L" },
+      { "title": "CSS", "img": "", "ext": "L" },
+      { "title": "SASS", "img": "", "ext": "L" },
+      { "title": "Java 8", "img": "", "ext": "L" },
+      { "title": "REST", "img": "", "ext": "P" },
+      { "title": "MySQL", "img": "", "ext": "D" },
+      { "title": "Apache2", "img": "", "ext": "S" },
+      { "title": "Apache Tomcat", "img": "", "ext": "S" },
+      { "title": "Git", "img": "", "ext": "T" },
+      { "title": "Swagger 2", "img": "", "ext": "T" },
+      { "title": "Postman", "img": "", "ext": "T" },
+      { "title": "MySQL Workbanch", "img": "", "ext": "T" },
+      { "title": "VS Code", "img": "", "ext": "I" }
+    ]
+  },
+  {
+    "title": "IGEA BIT - Conti Privati",
+    "company": "Mobilesoft",
+    "type": "Web App",
+    "year": "2018",
+    "client": "Igea Banca",
+    "role": "Sviluppatore Front End",
+    "description": "L'applicazione ti guida nella richiesta di un conto corrente online, interga un sistema di firma di dgitale.",
+    "skills": [
+      { "title": "Angular2-7", "img": "", "ext": "F" },
+      { "title": "Bootstrap 3.7 / 4", "img": "", "ext": "F" },
+      { "title": "TypeScript", "img": "", "ext": "L" },
+      { "title": "JavaScript ES6", "img": "", "ext": "L" },
+      { "title": "HTML5", "img": "", "ext": "L" },
+      { "title": "CSS", "img": "", "ext": "L" },
+      { "title": "SASS", "img": "", "ext": "L" },
+      { "title": "REST", "img": "", "ext": "P" },
+      { "title": "Apache2", "img": "", "ext": "S" },
+      { "title": "Git", "img": "", "ext": "T" },
+      { "title": "VS Code", "img": "", "ext": "I" }
+    ]
+  },
+  {
+    "title": "IGEA BIZ - Conti Imprese",
+    "company": "Mobilesoft",
+    "type": "Web App",
+    "year": "2017",
+    "client": "Igea Banca",
+    "role": "Sviluppatore Front End",
+    "description": "L'applicazione ti guida nella richiesta di un conto corrente online, interga un sistema di firma digitale con riconoscimento a distanza.",
+    "skills": [
+      { "title": "Angular2-7", "img": "", "ext": "F" },
+      { "title": "Bootstrap 3.7 / 4", "img": "", "ext": "F" },
+      { "title": "TypeScript", "img": "", "ext": "L" },
+      { "title": "JavaScript ES6", "img": "", "ext": "L" },
+      { "title": "HTML5", "img": "", "ext": "L" },
+      { "title": "CSS", "img": "", "ext": "L" },
+      { "title": "SASS", "img": "", "ext": "L" },
+      { "title": "REST", "img": "", "ext": "P" },
+      { "title": "Apache2", "img": "", "ext": "S" },
+      { "title": "Git", "img": "", "ext": "T" },
+      { "title": "VS Code", "img": "", "ext": "I" }
+    ]
+  },
+  {
+    "title": "Lightdrop",
+    "company": "Altro",
+    "type": "Mobile App",
+    "year": "2020",
+    "client": "Lightrop Entertiment",
+    "role": "Sviluppatore Mobile",
+    "description": "L'applicazione ha lo scopo di organizare eventi di vario genere e si pone come obbietivo quello di portare ad far incontrare le persone fisicamente.",
+    "skills": [
+      { "title": "React Native", "img": "", "ext": "F" },
+      { "title": "React Hooks", "img": "", "ext": "F" },
+      { "title": "React", "img": "", "ext": "F" },
+      { "title": "JavaScript ES6", "img": "", "ext": "T" },
+      { "title": "REST", "img": "", "ext": "P" },
+      { "title": "Postman Docs", "img": "", "ext": "T" },
+      { "title": "Git", "img": "", "ext": "T" },
+      { "title": "VS Code", "img": "", "ext": "T" }
+    ]
+  }
+]
