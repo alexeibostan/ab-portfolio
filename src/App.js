@@ -2,11 +2,30 @@ import React, { useReducer, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Drawer from '@material-ui/core/Drawer';
+import IconButton from '@material-ui/core/IconButton';
+import CloseIcon from '@material-ui/icons/Close';
+import { ThemeProvider } from '@material-ui/styles';
 
 import ProjectCard from './components/ProjectCard';
 import Separator from './components/Separator';
+import Description from './components/Description';
 import ProjectDetail from './components/ProjectDetail';
 import PortfolioHeader from './components/PortfolioHeader';
+
+import { createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#2F5597',
+    },
+    secondary: {
+      main: '#ED7D31',
+    },
+    contrastThreshold: 3,
+    tonalOffset: 0.2,
+  },
+});
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,6 +39,13 @@ const useStyles = makeStyles((theme) => ({
   },
   bodyContainer: {
     padding: theme.spacing(3),
+    marginTop: 64,
+  },
+  drowerCloseButton: {
+    position: 'absolute',
+    top: 5,
+    right: 5,
+    zIndex: 2,
   },
 }));
 
@@ -78,46 +104,61 @@ export default function App() {
 
   return (
     <div className={classes.root}>
-      {/* DROWER FOR DETAIL PROJECT */}
-      <React.Fragment key='right'>
-        <Drawer
-          anchor='right'
-          open={state.isDrowerOpen}
-          onClose={() => dispatch({ type: 'CLOSE_DROWER' })}
-        >
-          <ProjectDetail project={state.detailProject} />
-        </Drawer>
-      </React.Fragment>
+      <ThemeProvider theme={theme}>
+        {/* DROWER FOR DETAIL PROJECT */}
+        <React.Fragment key='right'>
+          <Drawer
+            anchor='right'
+            open={state.isDrowerOpen}
+            onClose={() => dispatch({ type: 'CLOSE_DROWER' })}
+          >
+            <div>
+              <IconButton
+                onClick={() => dispatch({ type: 'CLOSE_DROWER' })}
+                className={classes.drowerCloseButton}
+              >
+                <CloseIcon />
+              </IconButton>
+              <ProjectDetail project={state.detailProject} />
+            </div>
+          </Drawer>
+        </React.Fragment>
 
-      <PortfolioHeader />
+        {/* PAGE HEADER */}
+        <PortfolioHeader />
 
-      {/* PAGE BODY */}
-      <div className={classes.bodyContainer}>
-        {state.companies.map((company) => (
-          <div key={company}>
-            <Separator title={company} />
-            <Grid
-              container
-              alignItems='center'
-              justify='flex-start'
-              spacing={3}
-            >
-              {state.projects
-                .filter((prg) => prg.company === company)
-                .map((prg, index) => (
-                  <Grid key={index} item xs={12} sm={6} md={4} lg={3}>
-                    <ProjectCard
-                      project={prg}
-                      onMoreAction={() =>
-                        dispatch({ type: 'SHOW_DETAIL_PROJECT', payload: prg })
-                      }
-                    />
-                  </Grid>
-                ))}
-            </Grid>
-          </div>
-        ))}
-      </div>
+        {/* PAGE BODY */}
+        <div className={classes.bodyContainer}>
+          <Description />
+          {state.companies.map((company) => (
+            <div key={company}>
+              <Separator title={company} />
+              <Grid
+                container
+                alignItems='center'
+                justify='flex-start'
+                spacing={3}
+              >
+                {state.projects
+                  .filter((prg) => prg.company === company)
+                  .map((prg, index) => (
+                    <Grid key={index} item xs={12} sm={6} md={4} lg={3}>
+                      <ProjectCard
+                        project={prg}
+                        onMoreAction={() =>
+                          dispatch({
+                            type: 'SHOW_DETAIL_PROJECT',
+                            payload: prg,
+                          })
+                        }
+                      />
+                    </Grid>
+                  ))}
+              </Grid>
+            </div>
+          ))}
+        </div>
+      </ThemeProvider>
     </div>
   );
 }

@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
   companyInfo: {
     marginTop: theme.spacing(1.3),
   },
+  divider: {
+    backgroundColor: theme.palette.secondary.main,
+  },
 }));
 
 export default function ProjectDetail({ project }) {
@@ -32,9 +35,11 @@ export default function ProjectDetail({ project }) {
     <div className={classes.root}>
       <div>
         <Typography variant='h6'>{project.title}</Typography>
-        <Typography variant='subtitle1'>{project.type}</Typography>
+        <Typography color='secondary' variant='subtitle1'>
+          {project.type}
+        </Typography>
       </div>
-      <Divider />
+      <Divider className={classes.divider} />
       <div className={classes.companyInfo}>
         <Typography variant='subtitle2'>
           {project.company} {project.year}

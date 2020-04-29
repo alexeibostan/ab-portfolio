@@ -12,13 +12,18 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(3),
     marginBottom: theme.spacing(3),
   },
+  title: {
+    color: theme.palette.primary.dark,
+  },
 }));
 
 export default function Separator({ title }) {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Typography variant='h5'>{title}</Typography>
+      <Typography className={classes.title} variant='h5'>
+        {title}
+      </Typography>
     </div>
   );
 }

@@ -5,10 +5,11 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Avatar from '@material-ui/core/Avatar';
+import Tooltip from '@material-ui/core/Tooltip';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import { red } from '@material-ui/core/colors';
+
 import ProjectChip from './ProjectChip';
 
 const useStyles = makeStyles((theme) => ({
@@ -16,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
     width: 272,
   },
   avatar: {
-    backgroundColor: red[500],
+    backgroundColor: 'transparent',
+    color: theme.palette.secondary.main,
   },
   chip: {
     margin: theme.spacing(0.5),
@@ -45,9 +47,12 @@ export default function ProjectCard({ project, onMoreAction }) {
     <Card className={classes.root}>
       <CardHeader
         avatar={
-          <Avatar aria-label='recipe' className={classes.avatar}>
-            {project.company.slice(0, 2).toUpperCase()}
-          </Avatar>
+          <Tooltip title={project.role} aria-label={project.role}>
+            <Avatar aria-label='company' className={classes.avatar}>
+              {project.role.split(' ')[0].slice(0, 1).toUpperCase()}
+              {project.role.split(' ')[1].slice(0, 1).toUpperCase()}
+            </Avatar>
+          </Tooltip>
         }
         title={project.title}
         subheader={getSubheader(project)}
@@ -70,7 +75,7 @@ export default function ProjectCard({ project, onMoreAction }) {
       </CardContent>
       <CardActions>
         <Button size='small' color='primary' onClick={() => onMoreAction()}>
-          ALTRO
+          ALTRE INFO
         </Button>
       </CardActions>
     </Card>
