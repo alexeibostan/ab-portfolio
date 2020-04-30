@@ -49,6 +49,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const PRG_JSON_URL = 'https://alexeibostan.github.io/ab-portfolio/';
+
 const initialState = {
   projects: [],
   companies: [],
@@ -88,7 +90,7 @@ export default function App() {
   };
 
   useEffect(() => {
-    fetch('/ab-projects.json')
+    fetch(PRG_JSON_URL + '/ab-projects.json')
       .then((response) => {
         return response.json();
       })

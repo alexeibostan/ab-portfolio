@@ -34,7 +34,10 @@ export default function PortfolioHeader() {
           color='inherit'
           aria-label='icon'
         >
-          <Avatar alt='Alexei Bostan' src='/logo.png' />
+          <Avatar
+            alt='Alexei Bostan'
+            src='https://alexeibostan.github.io/ab-portfolio/logo.png'
+          />
         </IconButton>
         <Hidden smDown>
           <Typography variant='h6' component='h1' className={classes.title}>
@@ -93,7 +96,7 @@ export default function PortfolioHeader() {
           </Link>
         </Hidden>
         <Link
-          href='/RESUME-Alexei-Bostan-IT.pdf'
+          href='https://alexeibostan.github.io/ab-portfolio/RESUME-Alexei-Bostan-IT.pdf'
           download='RESUME-Alexei-Bostan'
           color='inherit'
         >
