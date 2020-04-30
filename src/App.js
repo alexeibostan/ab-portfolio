@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const PRG_JSON_URL = 'https://alexeibostan.github.io/ab-portfolio/';
+const PRG_JSON_URL = 'https://alexeibostan.github.io/ab-portfolio';
 
 const initialState = {
   projects: [],
