@@ -6,7 +6,7 @@
     "year": "2019",
     "client": "Intesa San Paolo",
     "role": "Sviluppatore Front End",
-    "description": "L'applicazione visualizza alcune polizze stipulate dai clenti della banca e permette alcune operazioni.",
+    "description": "L'applicazione visualizza alcune polizze stipulate dai clenti della banca e permette delle operazioni.",
     "skills": [
       { "title": "Angular7", "img": "", "ext": "F" },
       { "title": "Custom Framework (Angular7)", "img": "", "ext": "F" },
@@ -67,7 +67,7 @@
     "type": "Mobile App",
     "client": "Igea Banca",
     "role": "Sviluppatore Mobile",
-    "description": "L'applicazione serviva ha raccogliere un sondaggio duranate un evento per Igea Banca.",
+    "description": "L'applicazione serviva a raccogliere un sondaggio duranate un evento per Igea Banca.",
     "skills": [
       { "title": "Appcelerator Titanium", "img": "", "ext": "F" },
       { "title": "JavaScript ES5", "img": "", "ext": "T" },
@@ -84,7 +84,7 @@
     "type": "Mobile iPad App",
     "client": "Banca BNL",
     "role": "Sviluppatore Mobile",
-    "description": "L'applicazione serve a visualizzare lo stato degli ordini fatti dagli negozi Talco.",
+    "description": "Riscritta con tecnologia mobile ibrida una vecchia applicazione web che approva delle transazioni.",
     "skills": [
       { "title": "Framework Ionic 2", "img": "", "ext": "F" },
       { "title": "TypeScript", "img": "", "ext": "L" },

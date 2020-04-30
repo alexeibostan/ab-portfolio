@@ -93,7 +93,7 @@ export default function PortfolioHeader() {
           </Link>
         </Hidden>
         <Link
-          href='/RESUME-Alexei-Bostan.pdf'
+          href='/RESUME-Alexei-Bostan-IT.pdf'
           download='RESUME-Alexei-Bostan'
           color='inherit'
         >
