@@ -1,4 +1,5 @@
 import React, { useReducer, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Drawer from '@material-ui/core/Drawer';
@@ -49,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const PRG_JSON_URL = 'https://alexeibostan.github.io/ab-portfolio';
+const contextUrl = 'ab-portfolio';
 
 const initialState = {
   projects: [],
@@ -71,13 +72,14 @@ function reducer(state, action) {
     case 'SHOW_DETAIL_PROJECT':
       return { ...state, detailProject: action.payload, isDrowerOpen: true };
     default:
-      throw new Error();
+      throw new Error('The action is not handled yet!');
   }
 }
 
 export default function App() {
   const classes = useStyles();
   const [state, dispatch] = useReducer(reducer, initialState);
+  const { i18n } = useTranslation();
 
   const filterCompanies = (projects) => {
     const companies = [];
@@ -90,12 +92,13 @@ export default function App() {
   };
 
   useEffect(() => {
-    fetch(PRG_JSON_URL + '/ab-projects.json')
+    const splited = i18n.language.split('-');
+    const lang = splited.length > 1 ? splited[0] : i18n.language;
+    fetch(`/${contextUrl}/ab-projects-${lang}.json`)
       .then((response) => {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         dispatch({
           type: 'FETCH_COMPANIES_SUCCESS',
           payload: filterCompanies(data),
@@ -105,7 +108,10 @@ export default function App() {
   }, []);
 
   return (
-    <div className={classes.root}>
+    <div
+      className={classes.root}
+      className={{ backgroundImage: 'ab-portfolio/veget.png' }}
+    >
       <ThemeProvider theme={theme}>
         {/* DROWER FOR DETAIL PROJECT */}
         <React.Fragment key='right'>
@@ -127,7 +133,7 @@ export default function App() {
         </React.Fragment>
 
         {/* PAGE HEADER */}
-        <PortfolioHeader />
+        <PortfolioHeader contextUrl={contextUrl} />
 
         {/* PAGE BODY */}
         <div className={classes.bodyContainer}>

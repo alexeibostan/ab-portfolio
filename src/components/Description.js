@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
@@ -23,12 +24,13 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Description() {
   const classes = useStyles();
+  const { t } = useTranslation();
 
   return (
     <div className={classes.root}>
       <Grid container alignItems='center' justify='flex-start'>
         <Typography className={classes.title} variant='h3'>
-          Sviluppatore Front End
+          {t('title')}
         </Typography>
       </Grid>
       <Grid
@@ -38,7 +40,7 @@ export default function Description() {
         justify='flex-start'
       >
         <Typography variant='body1'>
-          Credere in te stesso e il duro lavoro ti porterà sempre al successo.
+          <q>{t('subtitle')}</q>
         </Typography>
       </Grid>
       <Divider className={classes.divider} />

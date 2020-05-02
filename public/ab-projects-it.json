@@ -84,7 +84,7 @@
     "type": "Mobile iPad App",
     "client": "Banca BNL",
     "role": "Sviluppatore Mobile",
-    "description": "Riscritta con tecnologia mobile ibrida una vecchia applicazione web che approva delle transazioni.",
+    "description": "Una datata applicazione web di BNL è stata riscritta con una tecnologia mobile ibrida, permette di approvare alcune transazioni.",
     "skills": [
       { "title": "Framework Ionic 2", "img": "", "ext": "F" },
       { "title": "TypeScript", "img": "", "ext": "L" },
@@ -179,7 +179,7 @@
     "year": "2020",
     "client": "Lightrop Entertiment",
     "role": "Sviluppatore Mobile",
-    "description": "L'applicazione ha lo scopo di organizare eventi di vario genere e si pone come obbietivo quello di portare ad far incontrare le persone fisicamente.",
+    "description": "L'applicazione ha lo scopo di organizzare eventi di vario genere e si pone come obbietivo quello di portare a far incontrare le persone nel mondo reale.",
     "skills": [
       { "title": "React Native", "img": "", "ext": "F" },
       { "title": "React Hooks", "img": "", "ext": "F" },

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { makeStyles } from '@material-ui/core/styles';
 
 import IconButton from '@material-ui/core/IconButton';
@@ -22,8 +23,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function PortfolioHeader() {
+export default function PortfolioHeader({ contextUrl }) {
   const classes = useStyles();
+  const { i18n } = useTranslation();
+
+  const resumeUrl = () => {
+    const splited = i18n.language.split('-');
+    const lang = splited.length > 1 ? splited[0] : i18n.language;
+    return `${contextUrl}/RESUME-Alexei-Bostan-${lang}.pdf`;
+  };
 
   return (
     <AppBar position='fixed'>
@@ -96,7 +104,7 @@ export default function PortfolioHeader() {
           </Link>
         </Hidden>
         <Link
-          href='https://alexeibostan.github.io/ab-portfolio/RESUME-Alexei-Bostan-IT.pdf'
+          href={resumeUrl()}
           download='RESUME-Alexei-Bostan'
           color='inherit'
         >
