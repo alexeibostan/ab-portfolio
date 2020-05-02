@@ -108,10 +108,7 @@ export default function App() {
   }, []);
 
   return (
-    <div
-      className={classes.root}
-      className={{ backgroundImage: 'ab-portfolio/veget.png' }}
-    >
+    <div className={classes.root}>
       <ThemeProvider theme={theme}>
         {/* DROWER FOR DETAIL PROJECT */}
         <React.Fragment key='right'>

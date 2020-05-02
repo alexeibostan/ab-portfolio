@@ -30,7 +30,7 @@ export default function PortfolioHeader({ contextUrl }) {
   const resumeUrl = () => {
     const splited = i18n.language.split('-');
     const lang = splited.length > 1 ? splited[0] : i18n.language;
-    return `${contextUrl}/RESUME-Alexei-Bostan-${lang}.pdf`;
+    return `/${contextUrl}/RESUME-Alexei-Bostan-${lang}.pdf`;
   };
 
   return (
