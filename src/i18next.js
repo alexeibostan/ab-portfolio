@@ -12,7 +12,7 @@ const resources = {
   },
   it: {
     translation: {
-      title: 'Sviluppatore Fron end',
+      title: 'Sviluppatore Front End',
       subtitle: 'Se esiste un limite, voglio raggiungerlo per poi superarlo',
     },
   },
