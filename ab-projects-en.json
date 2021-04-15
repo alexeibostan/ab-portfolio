@@ -1,5 +1,29 @@
 [
   {
+    "title": "Consumer Finance",
+    "company": "Kirey Group",
+    "type": "Web App",
+    "year": "2020-2021",
+    "client": "Unicredit",
+    "role": "Front End Developer",
+    "description": "The application is a workflow used in the bank branches to sell small loans to private clients, it includes data entry, product configuration, document generation, proposal approval workflow by back office.",
+    "skills": [
+      { "title": "Angular7", "img": "", "ext": "F" },
+      { "title": "Angular Material 7", "img": "", "ext": "F" },
+      { "title": "Bootstrap 4", "img": "", "ext": "F" },
+      { "title": "TypeScript", "img": "", "ext": "L" },
+      { "title": "JavaScript ES6", "img": "", "ext": "L" },
+      { "title": "RxJS", "img": "", "ext": "F" },
+      { "title": "HTML5", "img": "", "ext": "L" },
+      { "title": "CSS", "img": "", "ext": "L" },
+      { "title": "SASS", "img": "", "ext": "L" },
+      { "title": "REST", "img": "", "ext": "F" },
+      { "title": "Git", "img": "", "ext": "T" },
+      { "title": "SVN", "img": "", "ext": "T" },
+      { "title": "VS Code", "img": "", "ext": "I" }
+    ]
+  },
+  {
     "title": "Cruscotto Polizze",
     "company": "Dedagroup - MC Engineering",
     "type": "Web App",
