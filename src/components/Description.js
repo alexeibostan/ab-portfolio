@@ -40,7 +40,7 @@ export default function Description() {
         justify='flex-start'
       >
         <Typography variant='body1'>
-          <q>{t('subtitle')}</q>
+          {t('subtitle')}
         </Typography>
       </Grid>
       <Divider className={classes.divider} />

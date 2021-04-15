@@ -7,13 +7,13 @@ const resources = {
   en: {
     translation: {
       title: 'Front End Developer',
-      subtitle: 'If there is a limit, I want to reach it and then overcome it',
+      subtitle: 'Below are the projects I have worked on over the years divided by company. The most important are SMILE - Digital Platform and Consumer Finance, they were also the longest projects where I gained a lot of experience with the Angular framework.',
     },
   },
   it: {
     translation: {
       title: 'Sviluppatore Front End',
-      subtitle: 'Se esiste un limite, voglio raggiungerlo per poi superarlo',
+      subtitle: 'Di seguito i progetti a cui ho lavorato negli anni raggrupati per azienda. I più importanti sono SMILE - Piattaforma Digitale e Consumer Finance, i quali sono stati anche i progetti più lunghi dove ho acquisito molta esperienza con il framework Angular.',
     },
   },
 };

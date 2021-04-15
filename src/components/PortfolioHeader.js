@@ -30,7 +30,7 @@ export default function PortfolioHeader({ contextUrl }) {
   const resumeUrl = () => {
     const splited = i18n.language.split('-');
     const lang = splited.length > 1 ? splited[0] : i18n.language;
-    return `/${contextUrl}/RESUME-Alexei-Bostan-${lang}.pdf`;
+    return `/${contextUrl}/RESUME-Alexei-Bostan-${lang.toLowerCase()}.pdf`;
   };
 
   return (
@@ -108,14 +108,7 @@ export default function PortfolioHeader({ contextUrl }) {
           download='RESUME-Alexei-Bostan'
           color='inherit'
         >
-          <IconButton
-            edge='end'
-            className={classes.icons}
-            color='inherit'
-            aria-label='github'
-          >
-            <AssignmentIndIcon />
-          </IconButton>
+          RESUME
         </Link>
       </Toolbar>
     </AppBar>

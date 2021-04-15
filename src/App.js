@@ -92,8 +92,8 @@ export default function App() {
   };
 
   useEffect(() => {
-    const splited = i18n.language.split('-');
-    const lang = splited.length > 1 ? splited[0] : i18n.language;
+    const splitted = i18n.language.split('-');
+    const lang = splitted.length > 1 ? splitted[0] : i18n.language;
     fetch(`/${contextUrl}/ab-projects-${lang}.json`)
       .then((response) => {
         return response.json();
